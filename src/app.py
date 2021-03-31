@@ -27,7 +27,7 @@ def hello_there(name):
         clean_name = "Friend"
 
     content = "Hello there, " + clean_name + "! It's " + formatted_now
-    return content
+    return render_template('hello.html', value=content)
 
 
 if __name__ == '__main__':
